@@ -1,0 +1,18 @@
+---
+applications:
+  .:
+    name: cleanishbot
+    framework:
+      name: standalone
+      info:
+        mem: 128M
+        description: Standalone Application
+        exec: !!null 
+    runtime: node08
+    command: bash test.sh
+    url: !!null 
+    mem: 128M
+    instances: 1
+    services:
+      redis-bb7cd:
+        type: redis
